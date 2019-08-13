@@ -52,10 +52,11 @@ end
 #####################################################
 
 def runner
-  until hit? > 21 do 
+  until hit? > 21 
     welcome
     initial_round
     hit?
   end
+  end_game
 end
     
