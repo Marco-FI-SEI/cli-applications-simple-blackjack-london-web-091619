@@ -38,6 +38,7 @@ def hit?(current_total)
     current_total += new_card
   elsif input != 'h' and input != 's'
     invalid_command
+    prompt_user
   end
   current_total
 end
