@@ -52,7 +52,7 @@ end
 #####################################################
 
 def runner
-  until hit? > 21 
+  until current_total > 21 
     welcome
     initial_round
     hit?
