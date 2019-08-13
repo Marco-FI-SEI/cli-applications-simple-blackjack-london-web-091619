@@ -52,10 +52,12 @@ end
 #####################################################
 
 def runner
-  until current_total > 21 
-    welcome
-    initial_round
-    hit?
+  welcome
+  total = initial_round
+  until total > 21 
+    hit? == total ? hit? : 
+    else
+      display_card_total
   end
   end_game
 end
