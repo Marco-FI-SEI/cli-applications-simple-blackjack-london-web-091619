@@ -52,6 +52,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  until hit? > 21 do 
+    welcome
+    initial_round
+    hit?
+  end
 end
     
